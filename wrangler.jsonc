@@ -7,9 +7,13 @@
 	"name": "runelog-api",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-09-21",
+	"compatibility_flags": ["nodejs_compat"],
 	"observability": {
 		"enabled": true
 	},
+	"routes": [
+		{"pattern": "api.runelog.dev", "custom_domain": true}
+	],
 	"upload_source_maps": true
 	/**
 	 * Smart Placement
