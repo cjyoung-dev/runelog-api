@@ -7,14 +7,25 @@
 	"name": "runelog-api",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-09-21",
-	"compatibility_flags": ["nodejs_compat"],
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"observability": {
 		"enabled": true
 	},
 	"routes": [
-		{"pattern": "api.runelog.dev", "custom_domain": true}
+		{
+			"pattern": "api.runelog.dev",
+			"custom_domain": true
+		}
 	],
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"hyperdrive": [
+		{
+			"binding": "HYPERDRIVE",
+			"id": "3a631db207674236bf205179230e7fb3"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

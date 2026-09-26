@@ -1,4 +1,4 @@
 name: local
 variables:
-  - name: base
+  - name: baseUrl
     value: localhost:8787
