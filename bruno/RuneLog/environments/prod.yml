@@ -1,0 +1,4 @@
+name: prod
+variables:
+  - name: baseUrl
+    value: api.runelog.dev
