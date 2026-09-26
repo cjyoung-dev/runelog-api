@@ -14,7 +14,9 @@
 import {Hono} from 'hono'
 import {db} from './middleware/db';
 import {PostgresJsDatabase} from 'drizzle-orm/postgres-js';
+
 import players from './routes/players';
+import activities from './routes/activities';
 
 const app = new Hono<{Variables: {db: PostgresJsDatabase}}>();
 
@@ -25,5 +27,6 @@ app.get('/health', (c) => {
 })
 
 app.route('/players', players)
+app.route('/activities', activities)
 
 export default app
